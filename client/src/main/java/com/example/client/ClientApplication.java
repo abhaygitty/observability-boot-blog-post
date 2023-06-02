@@ -35,8 +35,8 @@ public class ClientApplication {
 	}
 
 	@Bean
-	public WebClient webClientFromBuilder(WebClient.Builder webClientFromBuilder) { // works: http client request metrics exposed
-		webClientCustomizer.customize(webClientFromBuilder);
+	public WebClient webClientFromBuilder(WebClient.Builder webClientFromBuilder) {
+		// webClientCustomizer.customize(webClientFromBuilder);
 		return webClientFromBuilder
 			.baseUrl("http://localhost:6543")
 			.build();	
